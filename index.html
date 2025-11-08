@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolveForge AI Co-Pilot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-dark: #131314;
+        --bg-light: #f8f9fa;
+        --surface-dark: #1e1f20;
+        --surface-light: #ffffff;
+        --primary-brand: #89b4fa;
+        --primary-glow: rgba(137, 180, 250, 0.2);
+        --gradient-start: #82aaff;
+        --gradient-end: #c792ea;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .gemini-gradient-text {
+        background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gemini-glow-button {
+         box-shadow: 0 0 15px 0 var(--primary-glow);
+      }
+       .gemini-glow-button:hover {
+         box-shadow: 0 0 25px 0 var(--primary-glow);
+      }
+       .gemini-glow-input:focus-within {
+        border-color: var(--primary-brand);
+        box-shadow: 0 0 10px 0 var(--primary-glow);
+       }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-100 dark:bg-[#131314] transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
